@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="css/contact.css">
+        <link rel="stylesheet" href="css/all.css">
+    </head>
+    <body>
+        <section class="contact">
+            <div class="content">
+            <h2>Contact Us</h2>
+            </div>
+            <div class="container">
+            <div class="contactinfo">
+            
+            <div class="box">
+            <div class="icon"><i class="fa-solid fa-location-dot"></i></div>
+            <div class="text">
+                <h2>Address</h2>
+                <p>Delhi,India</p>
+            </div>
+            </div>
+            <div class="box">
+            <div class="icon"><i class="fa-solid fa-phone"></i></div>
+            <div class="text">
+            <h2>Phone</h2>
+            <a href="callto:9911658792">9911658792</a>
+            </div>
+            </div>
+            <div class="box">
+            <div class="icon"><i class="fa-solid fa-envelope"></i></div>
+            <div class="text">
+            <h2>Email</h2>
+            <a href="mailto:Deepanshuvaish26@gmail.com">Deepanshuvaish26@gmail.com</a>
+            </div>
+            </div>
+            <div class="social">
+<div class="soicon">
+    <a href="" class="inst"><i class="fa-brands fa-instagram"></i></a>
+    <a href="" class="face"><i class="fa-brands fa-facebook"></i></a>
+    <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
+</div>
+            </div>
+            </div>
+            <div class="form1">
+                <form name="submit-to-google-sheet">
+                    <h2>Send Massage</h2>
+                    <div class="inputbox">
+                    <input type="text" name="name" required="required">
+                    <span>Full Name</span>
+                     </div>
+                    <div class="inputbox">
+                     <input type="email" name="Email" required="required">
+                     <span>Email</span>
+                    </div>
+                    <div class="inputbox">
+                     <textarea name="Message" required="required"></textarea>
+                    <span>Type your Messages...</span>
+                    </div>
+                    <div class="inputbox">
+                        <input type="submit" name="" value="send" >
+                    </div>
+                </form>
+            </div>
+            </div>
+                </section>
+                <script>
+                    const scriptURL = 'https://script.google.com/macros/s/AKfycbzodMvpSQ646J9noqGtwRQd4nATYOVvstMs9qSl39hMjnmC6rXljOlfOhLuJZzW7izIIw/exec'
+                    const form = document.forms['submit-to-google-sheet']
+                  
+                    form.addEventListener('submit', e => {
+                      e.preventDefault()
+                      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                        .then(response => console.log('Success!', response))
+                        .catch(error => console.error('Error!', error.message))
+                    })
+                  </script> 
+    </body>
+</html>

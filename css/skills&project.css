@@ -1,0 +1,206 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color:  #110f24;;
+}
+.head>h2{
+    margin-left: 220px;
+    font-size: 30px;
+    color:white;
+    font-family: 'Trebuchet MS', 
+    'Lucida Sans Unicode', 'Lucida Grande',
+     'Lucida Sans', Arial, sans-serif;
+}
+#skill{
+    border: 1px solid black;
+    width: 40%;
+    height: 500px;
+    background-color:#333;
+    flex-direction: column;
+    padding: 10px;
+    margin: auto;
+    margin-top: 120px;
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+}
+#skill>div>h1{
+    color: white;
+    font-family: 'Trebuchet MS', 
+    'Lucida Sans Unicode', 'Lucida Grande',
+     'Lucida Sans', Arial, sans-serif;
+     padding: 20px;
+}
+.loader1{
+    position: relative;
+    width: 400px;
+    height: 10px;
+    background-color:#353b48;
+    margin-left: 20px;
+}
+.loader1::after{
+    text-align: end;
+    content: "90%";
+    position: absolute;
+    width:90%;
+    height: 100%;
+    background: linear-gradient(135deg,rgba(236,0,140,1)
+    0%,rgba(252,103,103,1)100%);
+    animation: html 2s ;
+}
+@keyframes html {
+    from{
+        width: 0;
+    }
+    to{
+        width: 90%;
+    }
+}
+.loader2{
+    position: relative;
+    width: 400px;
+    height: 10px;
+    background-color:#353b48;
+    margin-left: 20px;
+}
+.loader2::after{
+    text-align: end;
+    content: "80%";
+    position: absolute;
+    width:80%;
+    height: 100%;
+    background: linear-gradient(135deg,rgba(236,0,140,1)
+    0%,rgba(252,103,103,1)100%);
+    animation: html 2s ;
+}
+@keyframes html {
+    from{
+        width: 0;
+    }
+    to{
+        width: 80%;
+    }
+}
+.loader3{
+    position: relative;
+    width: 400px;
+    height: 10px;
+    background-color:#353b48;
+    margin-left: 20px;
+}
+.loader3::after{
+    text-align: end;
+    content: "60%";
+    position: absolute;
+    width:60%;
+    height: 100%;
+    background: linear-gradient(135deg,rgba(236,0,140,1)
+    0%,rgba(252,103,103,1)100%);
+    animation: html 2s ;
+}
+@keyframes html {
+    from{
+        width: 0;
+    }
+    to{
+        width: 60%;
+    }
+}
+.loader4{
+    position: relative;
+    width: 400px;
+    height: 10px;
+    background-color:#353b48;
+    margin-left: 20px;
+}
+.loader4::after{
+    text-align: end;
+    content: "80%";
+    position: absolute;
+    width:80%;
+    height: 100%;
+    background: linear-gradient(135deg,rgba(236,0,140,1)
+    0%,rgba(252,103,103,1)100%);
+    animation: html 2s ;
+}
+@keyframes html {
+    from{
+        width: 0;
+    }
+    to{
+        width: 80%;
+    }
+}
+.loader5{
+    position: relative;
+    width: 400px;
+    height: 10px;
+    background-color:#353b48;
+    margin-left: 20px;
+}
+.loader5::after{
+    text-align: end;
+    content: "90%";
+    position: absolute;
+    width:90%;
+    height: 100%;
+    background: linear-gradient(135deg,rgba(236,0,140,1)
+    0%,rgba(252,103,103,1)100%);
+    animation: html 2s ;
+}
+@keyframes html {
+    from{
+        width: 0;
+    }
+    to{
+        width: 90%;
+    }
+}
+
+@media (max-width:768px) {
+    #skill{
+        width: 70%;
+        height: 500px;
+    }   
+    .head>h2{
+        margin-left: 205px;
+        font-size: 30px;
+    }
+}
+@media (max-width:500px){
+    #skill{
+        width: 60%;
+        height: 500px;
+    }   
+    .loader1{
+        width: 275px;
+        margin-left: 10px;
+       
+    }
+    .loader2{
+        width: 275px;
+        margin-left: 10px;
+    }
+    .loader3{
+        width: 275px;
+        margin-left: 10px;
+    }
+    .loader4{
+        width: 275px;
+        margin-left: 10px;
+    }
+    .loader5{
+        width: 275px;
+        margin-left: 10px;
+    }
+    #skill>div>h1{
+        font-size: 25px;
+        margin-left: 10px;
+    }  
+   .head>h2{
+            margin-left: 92px;
+            font-size: 30px;
+        }
+}

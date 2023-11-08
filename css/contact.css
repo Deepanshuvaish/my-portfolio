@@ -1,0 +1,191 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #110f24;
+}
+.contact{
+    position: relative;
+    min-height: 100vh;
+    padding: 50px,100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.contact>.content{
+    max-width: 800px;
+    text-align: center;
+}
+.contact>.content>h2{
+    font-size: 36px;
+    font-weight: 500;
+    color:#d7b94c;
+    font-family: 'Trebuchet MS', 
+    'Lucida Sans Unicode', 'Lucida Grande'
+    , 'Lucida Sans', Arial, sans-serif;
+}
+.container{
+    position: relative;
+    width:50%;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    background-color: black;
+}
+.container>.contactinfo>{
+width: 50%;
+display: flex;
+flex-direction: column;
+}
+.container>.contactinfo>.box{
+    position: relative;
+    padding: 20px ,0;
+    display: flex;
+}
+.container>.contactinfo>.box>.icon{
+    min-width: 60px;
+    height: 60px;
+    color: white;  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 22px;
+}
+.container>.contactinfo>.box>.text{
+    display: flex;
+    margin-left: 20px;
+    font-size: 16px;
+    color:white;
+    flex-direction: column;
+    font-weight: 300;
+}
+.container>.contactinfo>.box>.text>a{
+text-decoration: none;
+color:white;
+font-family: 'Trebuchet MS', 
+'Lucida Sans Unicode', 'Lucida Grande'
+, 'Lucida Sans', Arial, sans-serif;
+}
+.container>.contactinfo>.box>.text>h2{
+    font-weight: 500;
+    color:#d7b94c;
+    font-family: 'Trebuchet MS', 
+    'Lucida Sans Unicode', 'Lucida Grande'
+    , 'Lucida Sans', Arial, sans-serif;
+}
+.form1{
+    width: 30%;
+    padding: 40px;
+    background:black;
+}
+form>h2{
+    font-size: 25px;
+    color: #d7b94c;
+    font-weight: 500;
+    font-family: 'Trebuchet MS', 
+    'Lucida Sans Unicode', 'Lucida Grande'
+    , 'Lucida Sans', Arial, sans-serif;
+}
+form>.inputbox{
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+}
+form>.inputbox>input,
+form>.inputbox>input>textarea
+{
+    width:100%;
+    padding: 5px , 0;
+    font-size: 16px;
+    margin: 10px,0px;
+    border: none;
+    border-bottom: 2px solid#333;
+    outline:none;
+    resize: none;
+    font-family: 'Trebuchet MS', 
+    'Lucida Sans Unicode', 'Lucida Grande'
+    , 'Lucida Sans', Arial, sans-serif;
+}
+form>.inputbox>span{
+    position: absolute;
+    left: 0;
+    padding: 5px , 0;
+    font-size: 16px;
+    margin: 10px,0px;
+    pointer-events: none;
+    transition: 0.5s;
+    color: #666;
+}
+form>.inputbox>input:focus ~ span,
+form>.inputbox>input:valid ~ 
+form>.inputbox>textarea:focus ~ span,
+form>.inputbox>textarea:valid ~ span
+{
+    color: #e91e63;
+    font-size: 12px;
+    transform: translate(-20px);
+}
+form>.inputbox> input[type="submit"]{
+    width: 100px;
+    background:#d7b94c;
+    color: black;
+    border: 2px solid black;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 18px;
+    font-family: 'Trebuchet MS', 
+    'Lucida Sans Unicode', 'Lucida Grande'
+    , 'Lucida Sans', Arial, sans-serif;
+}
+form>.inputbox> input[type="submit"]:hover{
+background-color: black;
+color: #d7b94c;
+border:2px solid #d7b94c;
+transition: 0.4s;
+}
+.contactinfo>.social>.soicon>a{
+margin-left:20px;
+padding: 10px;
+text-decoration: none;
+font-size: 20px;
+}
+.contactinfo>.social>.soicon>.inst{
+    color:rgb(203, 65, 136);
+}
+.contactinfo>.social>.soicon>.face{
+    color:white;
+}
+@media (max-width:768px){
+    .container{
+        position: relative;
+        width:80%;
+        height: 350px;
+    }
+    
+
+        .form1{
+            width: 30%;
+            padding: 40px;
+            height: 220px;
+            background:black;
+        }
+    }
+
+    @media (max-width:500px){
+        .container{
+            position: relative;
+            width:94%;
+            height: 350px;
+            display: block;
+        }
+        .form1{
+            width: 82%;
+        }
+
+    }
